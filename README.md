@@ -74,6 +74,6 @@ and when your local server is running you may goto ```127.0.0.1/admin```
 
 @Authors
 - <a href="http://github.com/Sjk-Lacoste">Tshepo Mohlatlole</a>
-- <a href="">Sbonelo Mkhize</a>
+- <a href="http://github.com/Sbonelo01">Sbonelo Mkhize</a>
 - <a href="">Letlhoholo Lefatlhe</a>
 - <a href="">Masai Mahapa</a>
