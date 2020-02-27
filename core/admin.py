@@ -5,6 +5,16 @@ from .models import (
     Country
 )
 
+class ContinentAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+
+
+class LawAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+
+
+class CountryAdmin(admin.ModelAdmin):
+    list_display = ('name',)
 
 # Register your models here.
 admin.sites.register(Continent)
