@@ -17,6 +17,6 @@ class CountryAdmin(admin.ModelAdmin):
     list_display = ('name',)
 
 # Register your models here.
-admin.sites.register(Continent, ContinentAdmin)
-admin.sites.register(Law, LawAdmin)
-admin.sites.register(Country, CountryAdmin)
+admin.site.register(Continent, ContinentAdmin)
+admin.site.register(Law, LawAdmin)
+admin.site.register(Country, CountryAdmin)
