@@ -25,5 +25,8 @@ class Country(models.Model):
     continent = models.ForeignKey(Continent, on_delete=models.SET_NULL, null=True, blank=True)
     law = models.ForeignKey(Law, on_delete=models.SET_NULL, null=True, blank=True)
 
+    class Meta:
+        verbose_name_plural = "countries"
+
     def __str__(self):
         return self.name
