@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>Country Laws - Home</title>
+    {% endif %}
+
+    {% include '_partials/css.html' %} 
+
+    {% block css %}{% endblock %}
+
+  </head>
+  <body>
+    {% include '_partials/header.html' %}
+
+    {% block content %}{% endblock %}
+
+    {% include '_partials/footer.html' %}
+
+    {% include '_partials/js.html' %}
+    {% block js %}{% endblock %}
+  </body>
+</html>
