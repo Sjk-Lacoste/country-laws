@@ -1,0 +1,1 @@
+web: gunicorn country_laws.wsgi
