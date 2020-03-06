@@ -9,4 +9,4 @@ assistant = AssistantV2(
 )
 
 assistant.set_service_url('https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/9e0b8c2d-9630-4f0b-a918-4c6469caeac7')
-
+imb_access_token = 'p85sA5JqRyxJyDwK1o9k'
