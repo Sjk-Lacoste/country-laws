@@ -1,0 +1,135 @@
+:root {
+    --lightblue: #F6F9FC;
+    --red: #d64041;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bg-lightblue {
+    background: var(--lightblue);
+}
+
+.bg-red {
+    background: var(--red);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.container-fluid-max {
+    max-width: 1440px;
+}
+
+.cover {
+    background: no-repeat center/cover;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.scroll .page-header {
+    background: var(--red);
+}
+
+.page-header {
+    transition: background 0.5s ease-in-out;
+}
+
+.page-header .navbar {
+    padding: 1rem 0;
+}
+
+.page-header .navbar-toggler {
+    border-color: var(--white); 
+}
+
+@media screen and (max-width: 991px) {
+    .page-header {
+        background: var(--red);
+    }
+}
+
+.scroll .hero {
+    transform: scale(0.98);
+}
+
+.hero {
+    background-attachment: fixed;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0,rgba(0, 0, 0, 0.3) 50%,rgba(0, 0, 0, 0.1) 100%);
+}
+
+.hero .container-fluid {
+    z-index: 10;
+}
+
+.contents {
+    display: flex;
+    height: 450px;
+}
+
+.contents .item {
+    flex: 50%;
+    height: 100%;
+}
+
+.contents .item img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-text {
+    vertical-align: middle;
+    padding: 10px 30px;
+}
+
+.about-image {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 450px;
+}
+
+.about-image img {
+    height: 100%;
+}
+
+.page-footer .footer-links {
+    text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+    .page-footer .footer-child {
+        text-align: center;
+    }
+}
+
+.vh-50 {
+    height: 50vh;
+}

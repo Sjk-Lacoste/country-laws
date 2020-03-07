@@ -38,6 +38,7 @@ ALLOWED_HOSTS = [
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django_summernote',
+    'widget_tweaks',
     
     'core',
 
