@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    {% for law in laws %}
+        {{law}}
+    {% endfor %}
+{% endblock %}
