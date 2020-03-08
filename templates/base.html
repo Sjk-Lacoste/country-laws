@@ -25,16 +25,5 @@
 
     {% include '_partials/js.html' %}
     {% block js %}{% endblock %}
-
-<script>
-$(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    if(scroll < 350){
-        $('.fixed-top').css('background', 'transparent');
-    } else{
-        $('.fixed-top').css('background', '#d64041');
-    }
-});
-</script>
   </body>
 </html>
