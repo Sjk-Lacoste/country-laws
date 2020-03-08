@@ -14,4 +14,63 @@
             </div>
         </div>
     </section>
+
+<div class="container">
+        <div class="col-md-12">
+            <center class="py-5">
+                <div class="col-md-10">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        {% for law in laws %}
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="{{ law.aria_label }}">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#{{ law.aria_collapse }}" aria-expanded="true" aria-controls="{{ law.aria_collapse }}">
+                                        {{ law.title }}
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="{{ law.aria_collapse }}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="{{ law.aria_label }}">
+                                <div class="panel-body">
+                                    <p>
+                                        {% autoescape off %}
+                                            {{ law.description }}
+                                        {% endautoescape %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% comment %} <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Section 2
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Section 3
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+                                </div>
+                            </div>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
 {% endblock %}

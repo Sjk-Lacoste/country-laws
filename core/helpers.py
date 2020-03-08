@@ -11,7 +11,7 @@ assistant = AssistantV2(
 )
 
 assistant.set_service_url('https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/9e0b8c2d-9630-4f0b-a918-4c6469caeac7')
-imb_access_token = 'p85sA5JqRyxJyDwK1o9k'
+imb_access_token = 'Cmk8TYJ1tiMabs8usGqV'
 
 def get_laws_in_country(country_id):
     country = get_object_or_404(Country, pk=country_id)
